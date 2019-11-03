@@ -11,6 +11,7 @@ public class ObservateurNiveau extends ObservateurItem {
         sesItems.put(i, i.niveau());
     }
 
+    @Override
     public void update(Observable o, Object ignore) {
         Item i = (Item)o;
         if(i.niveau() == 1 && (int)sesItems.get(i) == 0){

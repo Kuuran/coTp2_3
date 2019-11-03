@@ -11,6 +11,7 @@ public class ObservateurFuite extends ObservateurItem {
         sesItems.put(i, i.masse());
     }
 
+    @Override
     public void update(Observable o, Object ignore) {
         Item i = (Item)o;
         if(!(i.masse() == (double) sesItems.get(i))){

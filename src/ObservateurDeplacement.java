@@ -11,6 +11,7 @@ public class ObservateurDeplacement extends ObservateurItem {
         sesItems.put(i, new Position(i.position().x(), i.position().y()));
     }
 
+    @Override
     public void update(Observable o, Object ignore) {
         Item i = (Item)o;
         if(!(i.position().equals(sesItems.get(i)))){
